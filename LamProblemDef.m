@@ -10,8 +10,8 @@ function [NP, OutInfo, Geometry, Loads] = LamProblemDef()
 % OF ANY KIND. RECIPIENT AGREES TO WAIVE ANY AND ALL CLAIMS AGAINST, AND INDEMNIFIES 
 % AND HOLDS HARMLESS, THE UNITED STATES GOVERNMENT, ITS CONTRACTORS AND 
 % SUBCONTRACTORS, AS WELL AS ANY PRIOR RECIPIENT. This code was prepared by Drs. 
-% B.A. Bednarcyk and S.M. Arnold to complement the book ìPractical Micromechanics of 
-% Composite Materialsî during the course of their government work.
+% B.A. Bednarcyk and S.M. Arnold to complement the book ‚ÄúPractical Micromechanics of 
+% Composite Materials‚Äù during the course of their government work.
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %
 % Purpose: Sets up and defines classical lamination theory (CLT) problems.  Specifies
@@ -63,7 +63,7 @@ Loads{NP}.Value = [ 1,  0,  0,  0,  0,  0];
 
 % NP = NP + 1;
 % OutInfo.Name(NP) = "Chapter 2 - Section 2.5.2 IM7-8552 [0,90,90,0] Nx";
-% Geometry{NP}.Orient = [30,30];
+% Geometry{NP}.Orient = [0,90,90,0];
 % nplies = length(Geometry{NP}.Orient);
 % Geometry{NP}.plymat(1:nplies) = 1;
 % Geometry{NP}.tply(1:nplies) = 0.15;
