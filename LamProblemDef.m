@@ -387,6 +387,7 @@ Loads{NP}.Value = [ 1,  0,  0,  0,  0,  0];
 % end
 % 
 % % -- 7.4.2.2 - glass-epoxy [45/0/-45/90]s, epsy0 applied
+% NP = NP + 1;
 % OutInfo.Name(NP) = "Section 7.4.2.2 - glass-epoxy [45,0,-45,90]s";
 % Geometry{NP}.Orient = [45,0,-45,90,90,-45,0,45];
 % nplies = length(Geometry{NP}.Orient);
