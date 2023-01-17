@@ -9,8 +9,8 @@
 % OF ANY KIND. RECIPIENT AGREES TO WAIVE ANY AND ALL CLAIMS AGAINST, AND INDEMNIFIES 
 % AND HOLDS HARMLESS, THE UNITED STATES GOVERNMENT, ITS CONTRACTORS AND 
 % SUBCONTRACTORS, AS WELL AS ANY PRIOR RECIPIENT. This code was prepared by Drs. 
-% B.A. Bednarcyk and S.M. Arnold to complement the book “Practical Micromechanics of 
-% Composite Materials” during the course of their government work.
+% B.A. Bednarcyk and S.M. Arnold to complement the book â€œPractical Micromechanics of 
+% Composite Materialsâ€ during the course of their government work.
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %
 % Purpose: This script runs stand-alone micromechanics progressive damage simulations  
@@ -490,8 +490,12 @@ else
 end
 
 % -- Display and save stress-strain plot, local von Mises stress and damage
+
+% -- Only update/write plot when new failure happens
 if (MoS.NewFailure || INC == 1) && (props.micro == "GMC" || props.micro == "HFGMC")
-       
+% -- Plot/write every increment
+%if INC > 0 && (props.micro == "GMC" || props.micro == "HFGMC")
+
     mats = zeros(2*props.RUC.NB, 2*props.RUC.NG);
     x2 = zeros(1, 2*props.RUC.NB);
     x3 = zeros(1, 2*props.RUC.NG);
