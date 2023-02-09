@@ -10,8 +10,8 @@ function [NP, OutInfo, MicroMat, Loads] = MicroProblemDef()
 % OF ANY KIND. RECIPIENT AGREES TO WAIVE ANY AND ALL CLAIMS AGAINST, AND INDEMNIFIES 
 % AND HOLDS HARMLESS, THE UNITED STATES GOVERNMENT, ITS CONTRACTORS AND 
 % SUBCONTRACTORS, AS WELL AS ANY PRIOR RECIPIENT. This code was prepared by Drs. 
-% B.A. Bednarcyk and S.M. Arnold to complement the book ìPractical Micromechanics of 
-% Composite Materialsî during the course of their government work.
+% B.A. Bednarcyk and S.M. Arnold to complement the book ‚ÄúPractical Micromechanics of 
+% Composite Materials‚Äù during the course of their government work.
 % +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 %
 % Purpose: Sets up and defines stand-alone micromechanics problems.  Specifies
@@ -203,20 +203,20 @@ Loads{NP}.Value = [0,  1,  0,  0,  0,  0];
 % Loads{NP}.Value = [  0, 0.0,  0.02,   0,  0,  0];
 % 
 % NP = NP + 1;
-% OutInfo.Name(NP) = "SiC-SiC No Interface Chap 5 Table 5.3 and Fig 5.11";
+% OutInfo.Name(NP) = "SiC-SiC No Interface Chap 5 Table 5.3";
 % MicroMat{NP} = 133;
 % Loads{NP}.DT = 0;
 % Loads{NP}.Type  = [  S,   S,    E,  S,  S,  S];
 % Loads{NP}.Value = [  0, 0.0, 0.02,  0,  0,  0];
 % 
 % NP = NP + 1;
-% OutInfo.Name(NP) = "SiC-SiC BN Interface Chap 5 Fig 5.13";
+% OutInfo.Name(NP) = "SiC-SiC BN Interface Chap 5 Fig 5.11";
 % MicroMat{NP} = 134;
 % Loads{NP}.DT = 0;
 % Loads{NP}.Type  = [  S,      E,  S,   S,  S,  S];
 % Loads{NP}.Value = [  0, 0.0006,  0.,  0,  0,  0];
 % 
-% % -- Micro scale failure envelopes - Example Fig 5.14 
+% % -- Micro scale failure envelopes - Example Fig 5.12 
 % tttt = datetime(datetime,'Format','yyyy-MMM-dd HH.mm.ss');
 % OutInfo.EnvFile = ['Output/', 'SiC-SiC-BN Composite ENVELOPE - ', char(tttt), '.EnvData'];
 % ang = 0;
